@@ -26,4 +26,7 @@ public class DeptController {
     public List<Dept> list() {
         return service.list();
     }
+
+   /* @GetMapping(value = "/info")
+    public */
 }

@@ -18,3 +18,15 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 200
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-provider-dept-8001
+    prefer-ip-address: true
+info:
+  app.name: microservicecloud
+  company.name: www.wjy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
