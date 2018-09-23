@@ -1,5 +1,6 @@
 package com.wjy.springcloud.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
