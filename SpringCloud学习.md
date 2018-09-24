@@ -95,7 +95,7 @@
 
 5. 验证配置
 
-   ```java
+   ```text
    浏览器中输入   http://localhost:3344/master/microservicecloud-config-test.yml或
    http://localhost:3344/microservicecloud-config/test/master
    (详情百度配置规则)
