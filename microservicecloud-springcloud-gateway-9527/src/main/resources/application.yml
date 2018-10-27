@@ -1,0 +1,18 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: springcloud-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: feign
+        uri: http://localhost
+        predicates:
+        - Path=/wjy/feign/**
+        filters:
+        - StripPrefix=2 # 过滤层数
+      discovery:
+        locator:
+          enabled: true
+
