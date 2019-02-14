@@ -5,4 +5,5 @@ app:
 apollo:
   bootstrap:
     enabled: true
-  meta: http://localhost:8080
+  meta: http://192.168.1.119:8080
+

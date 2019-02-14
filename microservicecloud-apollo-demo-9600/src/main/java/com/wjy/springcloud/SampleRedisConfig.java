@@ -6,14 +6,17 @@ import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
 @ConfigurationProperties
 @Data
+@Component
 public class SampleRedisConfig {
     @ApolloConfig
     private Config config;
+
     private int timeout;
 
     @ApolloConfigChangeListener
